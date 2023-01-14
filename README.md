@@ -10,3 +10,11 @@ Upon having derived the Cartesian coordinate trajectories above, if we want to a
 
 ## Plotting field lines
 [This](https://github.com/jaiisrani/fusion/blob/main/plotting_vector_fields.m) code is an example of plotting magnetic field lines using `quiver3` for $\vec{B} = {B_0} \big(-\frac{zx}{L^2} \hat{i} + -\frac{zy}{L^2} \hat{j} + (1 + \frac{z^2}{L^2}) \hat{k}\big)$. I have plotted the vector field at various coordinate points marked by `X`, `Y`, `Z`. For additional documentation on `quiver3` refer [here](https://ch.mathworks.com/help/matlab/ref/quiver3.html#mw_eaf91c51-2b00-4962-9837-cf547e770890).
+
+## Deeper analysis of simulated trajectories
+In the code [trajectories_bottle_cartesian.m](), we have numerically solved the set of Lorentz' differential equations to obtain the trajectories in $(x, y, z)$ coordinates. We also finally plot 
+a 3 dimensional graph of the trajectory in Cartesian coordinates. However, no temporal analysis has been done yet. In further tasks, we use the timesteps and Cartesian coordinate trajectories derived in this piece of code.
+
+Using the code [visualizing_field_and_traj_combined](), in the same figure I have plotted the 3 dimensional Cartesian trajectory of the particle, and, vector lines of the magnetic field.
+
+It is important to visualise how the particle's coordinates evolve in time. Upon running [time_trajectories_bottle_cartesian.m](), four figures are outputted. In the first three figures we have plotted $x$ against $t$, $y$ against $t$ and $z$ against $t$. In Figure 4, we evolve the 3 dimensional plot in equally spaced timesteps. [time_trajectories_bottle_cylindrical.m]() does a similar analysis in Cylindrical coordinates $(R, \phi, z)$.
