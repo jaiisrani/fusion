@@ -20,3 +20,4 @@ Using the code [visualizing_field_and_traj_combined](), in the same figure I hav
 It is important to visualise how the particle's coordinates evolve in time. Upon running [time_trajectories_bottle_cartesian.m](), four figures are outputted. In the first three figures we have plotted $x$ against $t$, $y$ against $t$, and $z$ against $t$. In Figure 4, we evolve the 3 dimensional plot in equally spaced timesteps. [time_trajectories_bottle_cylindrical.m]() does similar analyses in Cylindrical coordinates $(R, \phi, z)$.
 
 Do the changes in README.md appear?
+Yes they appear
