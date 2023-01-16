@@ -13,11 +13,8 @@ Upon having derived the Cartesian coordinate trajectories above, if we want to a
 
 ## Deeper analysis of simulated trajectories
 In the code [trajectories_bottle_cartesian.m](), we numerically solve the set of Lorentz' differential equations to obtain particle trajectories in $(x, y, z)$ coordinates. We also finally plot 
-a 3 dimensional graph of the trajectory in Cartesian coordinates. However, no temporal analysis has been done yet. In further tasks, we use the timesteps and Cartesian coordinate trajectories derived in this piece of code, so if the trajectory needs to be re-derived upon changing parameters, then this file must be ran first, before any other files. On that note, [input_parameters.m]() is the file containing variables that store values of input parameters used in all pieces of code for this section.
+a 3 dimensional graph of the trajectory in Cartesian coordinates. However, no temporal analysis has been done yet. In further tasks, we use the timesteps and Cartesian coordinate trajectories derived in this piece of code, so if the trajectory needs to be re-derived upon changing parameters, then this file must be ran first, before any other files. On that note, [input_variables.m]() is the file containing variables that store values of input parameters used in all pieces of code for this section.
 
 Using the code [visualizing_field_and_traj_combined](), in the same figure I have plotted the 3 dimensional Cartesian trajectory of the particle, and, vector lines of the magnetic field.
 
 It is important to visualise how the particle's coordinates evolve in time. Upon running [time_trajectories_bottle_cartesian.m](), four figures are outputted. In the first three figures we have plotted $x$ against $t$, $y$ against $t$, and $z$ against $t$. In Figure 4, we evolve the 3 dimensional plot in equally spaced timesteps. [time_trajectories_bottle_cylindrical.m]() does similar analyses in Cylindrical coordinates $(R, \phi, z)$.
-
-Do the changes in README.md appear?
-Yes they appear
