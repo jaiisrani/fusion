@@ -1,10 +1,9 @@
 
 % parameters
-e = 1; B0 = 1; m = 1; c = 1; L = 1;
+load("input_variables.mat", "e", "m", "c", "B0", "L");
 
 % initial and boundary conditions
-tspan = [0:0.1:20]; % an array from 0 to 20 with step of 0.5
-y0 = [0 0 0 1 0 1];
+load("input_variables.mat", "tspan", "y0");
 
 % solving the differential equations
 [t, y] = ode45( @(t, y)DEs(t,y,e,B0,m,c,L), tspan, y0);
@@ -34,3 +33,5 @@ function dydt = DEs(t, y, e, B0, m, c, L)
     dydt(6) = (e * B0)/(m*c) * ( y(5)*y(1)*y(3)/L^2 - y(4)*y(2)*y(3)/L^2 );
 
 end
+
+%
