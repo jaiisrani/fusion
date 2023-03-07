@@ -29,4 +29,4 @@ Next, I train an autoencoder similar to the one above, with some values of param
 | $x_2$ | 2 * 1/3000 | 2 * 2/3000 | 2 * 3/3000 | ..... |    2          | 
 | $x_3$ | 3 * 1/3000 | 3 * 2/3000 | 3 * 3/3000 | ..... |    3          | 
 
-$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i/3000, 2 * i/3000, 3 * i/3000)$. The best autoencoder I managed to train here is coded [here](). It gives around $80-90 \%$ accuracy for $x_i > 0.01$.
+$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i/3000, 2 * i/3000, 3 * i/3000)$. The best autoencoder I managed to train here is coded [here](). It gives around $80-90$ percent accuracy for $x_i > 0.01$.
