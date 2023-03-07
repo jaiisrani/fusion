@@ -19,7 +19,7 @@ Using the code [visualizing_field_and_traj_combined](https://github.com/jaiisran
 It is important to visualise how the particle's coordinates evolve in time. Upon running [time_trajectories_bottle_cartesian.m](https://github.com/jaiisrani/fusion/blob/main/time_trajectories_bottle_cartesian.m), four figures are outputted. In the first three figures we have plotted $x$ against $t$, $y$ against $t$, and $z$ against $t$. In Figure 4, we evolve the 3 dimensional plot in equally spaced timesteps. [time_trajectories_bottle_cylindrical.m](https://github.com/jaiisrani/fusion/blob/main/time_trajectories_bottle_cylindrical.m) does similar analyses in Cylindrical coordinates $(R, \phi, z)$. [cartesian_bottle_cylindrical](https://github.com/jaiisrani/fusion/blob/main/cartesian_bottle_cylindrical.m) must be ran before this in order to convert Cartesian trajectories to Cylindrical.
 
 ## Autoencoders
-A [single MATLAB file](https://github.com/jaiisrani/fusion/blob/main/autoencoders_practice.m) containing all the relevant code for implementing a generic autoencoder. A diagram of this autoencoder network and the training log are depicted [here](https://github.com/jaiisrani/fusion/blob/main/training%20log.png)
+A [single MATLAB file](https://github.com/jaiisrani/fusion/blob/main/autoencoders_practice.m) containing all the relevant code for implementing a generic autoencoder. A diagram of this autoencoder network and the training log are depicted [here](https://github.com/jaiisrani/fusion/blob/main/training%20log.png).
 
 Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following, and it is coded [here](https://github.com/jaiisrani/fusion/blob/main/creating_matrix1.m): 
 
