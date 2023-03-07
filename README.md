@@ -21,7 +21,7 @@ It is important to visualise how the particle's coordinates evolve in time. Upon
 ## Autoencoders
 A [single MATLAB file](https://github.com/jaiisrani/fusion/blob/main/autoencoders_practice.m) containing all the relevant code for implementing a generic autoencoder. A diagram of this autoencoder network and the training log are depicted [here](https://github.com/jaiisrani/fusion/blob/main/training%20log.png)
 
-Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following: 
+Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following, and it is coded [here](): 
 
 |       | DataPoint1 | DataPoint2 | DataPoint3 | ..... | DataPoint3000 |
 | :---: |    :---:   |    :---:   |    :---:   | :---: |    :---:      | 
