@@ -21,7 +21,7 @@ It is important to visualise how the particle's coordinates evolve in time. Upon
 ## Autoencoders
 A [single MATLAB file](https://github.com/jaiisrani/fusion/blob/main/autoencoders_practice.m) containing all the relevant code for implementing a generic autoencoder. A diagram of this autoencoder network and the training log are depicted [here](https://github.com/jaiisrani/fusion/blob/main/training%20log.png)
 
-Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following, and it is coded [here](): 
+Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following, and it is coded [here](https://github.com/jaiisrani/fusion/blob/main/creating_matrix1.m): 
 
 |       | DataPoint1 | DataPoint2 | DataPoint3 | ..... | DataPoint3000 |
 | :---: |    :---:   |    :---:   |    :---:   | :---: |    :---:      | 
@@ -29,4 +29,4 @@ Next, I train an autoencoder similar to the one above, with some values of param
 | $x_2$ | 2 * 1/3000 | 2 * 2/3000 | 2 * 3/3000 | ..... |    2          | 
 | $x_3$ | 3 * 1/3000 | 3 * 2/3000 | 3 * 3/3000 | ..... |    3          | 
 
-$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i/3000, 2 * i/3000, 3 * i/3000)$. The best autoencoder I managed to train here is coded [here](). It gives around $80-90$ percent accuracy for $x_i > 0.01$.
+$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i/3000, 2 * i/3000, 3 * i/3000)$. The best autoencoder I managed to train here is coded [here](https://github.com/jaiisrani/fusion/blob/main/autoencoders_playing1.m). It gives around $80-90$ percent accuracy for $x_i > 0.01$.
