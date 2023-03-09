@@ -24,9 +24,9 @@
 - Next, I train an autoencoder similar to the one above, with some values of parameters tweaked. The training dataset I use is the following, and it is coded [here](https://github.com/jaiisrani/fusion/blob/main/creating_matrix1.m): 
 
 |       | DataPoint1 | DataPoint2 | DataPoint3 | ..... | DataPoint3000 |
-| :---: |    :---:   |    :---:   |    :---:   | :---: |    :---:      | 
-| $x_1$ | 1 * 1/3000 | 1 * 2/3000 | 1 * 3/3000 | ..... |    1          | 
-| $x_2$ | 2 * 1/3000 | 2 * 2/3000 | 2 * 3/3000 | ..... |    2          | 
-| $x_3$ | 3 * 1/3000 | 3 * 2/3000 | 3 * 3/3000 | ..... |    3          | 
+| :---: |    :---:     |    :---:       |    :---:       | :---: |    :---:      | 
+| $x_1$ | 1 * 1/3000^2 | 1 * 2^2/3000^2 | 1 * 3^2/3000^2 | ..... |    1          | 
+| $x_2$ | 2 * 1/3000^2 | 2 * 2^2/3000^2 | 2 * 3^2/3000^2 | ..... |    2          | 
+| $x_3$ | 3 * 1/3000^2 | 3 * 2^2/3000^2 | 3 * 3^2/3000^2 | ..... |    3          | 
 
-$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i/3000, 2 * i/3000, 3 * i/3000)$. The best autoencoder I managed to train here is coded [here](https://github.com/jaiisrani/fusion/blob/main/autoencoders_playing1.m). It gives around $80-90$ percent accuracy for $x_i > 0.01$.
+$(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i^2/3000^2, 2 * i^2/3000^2, 3 * i^2/3000^2)$. The best autoencoder I managed to train here is coded [here](https://github.com/jaiisrani/fusion/blob/main/autoencoders_playing1.m). I specifically chose to take number of points in the softmax layer to be equal to 2, because there can be 2 independent correlations in $(x_1, x_2, x_3)$. It gives around $80-90$ percent accuracy for (0.20, 0.55, 0.75).
