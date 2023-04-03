@@ -10,7 +10,7 @@
 
 ## Plotting field lines
 - [This](https://github.com/jaiisrani/fusion/blob/main/plotting_vector_fields.m) code is an example of plotting magnetic field lines using `quiver3` for $\vec{B} = {B_0} \big(-\frac{zx}{L^2} \hat{i} + -\frac{zy}{L^2} \hat{j} + (1 + \frac{z^2}{L^2}) \hat{k}\big)$. I have plotted the vector field at various coordinate points marked by `X`, `Y`, `Z`. For additional documentation on `quiver3` refer [here](https://ch.mathworks.com/help/matlab/ref/quiver3.html#mw_eaf91c51-2b00-4962-9837-cf547e770890).
-- Field lines for a homogenous magnetic field have been plotted [here]() using the code from above.
+- Field lines for a homogenous magnetic field have been plotted [here](https://github.com/jaiisrani/fusion/blob/main/plotting_field_lines_homo.m) using the code from above.
 
 ## Deeper analysis of simulated trajectories
 - In the code [trajectories_bottle_cartesian.m](https://github.com/jaiisrani/fusion/blob/main/trajectories_bottle_cartesian.m), we numerically solve the set of Lorentz' differential equations to obtain particle trajectories in $(x, y, z)$ coordinates. We also finally plot a 3 dimensional graph of the trajectory in Cartesian coordinates. However, no temporal analysis has been done yet. In further tasks, we use the timesteps and Cartesian coordinate trajectories derived in this piece of code, so if the trajectory needs to be re-derived upon changing parameters, then this file must be ran first, before any other files. On that note, [input_variables.m](https://github.com/jaiisrani/fusion/blob/main/input_variables.m) is the file containing variables that store values of input parameters used in all pieces of code for this section.
