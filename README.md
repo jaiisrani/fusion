@@ -34,7 +34,7 @@ $(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see 
 
 ## Autoencoders for full trajectory prediction
 I move to implementing autoencoders in Python in this section, because Keras in Python provides a variety of loss functions, whereas MATLAB just allows ```msesparse```. However, I generate the training data and labels using MATLAB. I try two different methods, to verify if any of them can actually learn to predict the output conditions given the input conditions and simulation time (don't confuse with code execution time).
-- In the [first method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_Tfixed.ipynb), I keep a fixed simulation time (not real computer-time). 
-- In the [next method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_tvariable.ipynb), the training data is collected over different time intervals. The variable corresponding to simulation time is also a part of the autoencoder's input. So in total there are 7 inputs and 6 outputs.
+- In the [first method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_Tfixed.ipynb), I keep a fixed simulation time (not real computer-time). Training dataset and training labels are created using [this]() code.
+- In the [next method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_tvariable.ipynb), the training data is collected over different time intervals. The variable corresponding to simulation time is also a part of the autoencoder's input. So in total there are 7 inputs and 6 outputs. Training dataset and training labels are created using [this]() code.
 
 ## Autoencoders for guiding centre prediction by dimensionality reduction
