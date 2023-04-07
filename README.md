@@ -32,7 +32,9 @@
 
 $(x_1, x_2, x_3)$ are the three features of each datapoint. One can clearly see that for DataPoint_i, $(x_1, x_2, x_3) = (1 * i^2/3000^2, 2 * i^2/3000^2, 3 * i^2/3000^2)$. The best autoencoder I managed to train here is coded [here](https://github.com/jaiisrani/fusion/blob/main/autoencoders_playing1.m). I specifically chose to take number of points in the softmax layer to be equal to 2, because there can be 2 independent correlations in $(x_1, x_2, x_3)$. It gives around $80-90$ percent accuracy for (0.20, 0.55, 0.75).
 
-## Autoencoders for trajectories
+## Autoencoders for full trajectory prediction
 I move to implementing autoencoders in Python in this section, because Keras in Python provides a variety of loss functions, whereas MATLAB just allows ```msesparse```. However, I generate the training data and labels using MATLAB. I try two different methods, to verify if any of them can actually learn to predict the output conditions given the input conditions and simulation time (don't confuse with code execution time).
 - In the [first method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_Tfixed.ipynb), I keep a fixed simulation time (not real computer-time). 
 - In the [next method](https://github.com/jaiisrani/fusion/blob/main/AutoEncoders_tvariable.ipynb), the training data is collected over different time intervals. The variable corresponding to simulation time is also a part of the autoencoder's input. So in total there are 7 inputs and 6 outputs.
+
+## Autoencoders for guiding centre prediction by dimensionality reduction
